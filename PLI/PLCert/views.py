@@ -5,14 +5,6 @@ from .models import Module
 
 # Create your views here.
 def index(request):
-    return render(request, 'PLCert/index.html')
-
-
-
-def about(request):
-    return render(request, 'PLCert/about.html')
-
-def courses(request):
 
     courses =  Course.objects.all()
     #variable set equal to Course from models to get all courses. 
@@ -22,4 +14,12 @@ def courses(request):
         'courses':courses
     }
 
-    return render(request, 'PLCert/courses.html', context)
+    return render(request, 'PLCert/index.html', context)
+
+
+
+def about(request):
+    return render(request, 'PLCert/about.html')
+
+def courses(request):
+    return render(request, 'PLCert/courses.html')

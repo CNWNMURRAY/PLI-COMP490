@@ -3,12 +3,6 @@
 
 {% block content %}
 <div class = "title"></div>
-    <h3 class="center-align">Courses</h3>
-
-     <ul class="courses">
-        {% for courses in courses %}
-        <li class= "collection-item"><a href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
-        {% endfor %}
-     </ul>
-    
+<h3 class="center-align">Courses</h3>
+  
 {% endblock %}
