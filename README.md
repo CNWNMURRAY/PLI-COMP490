@@ -8,14 +8,10 @@ to provide legal information to the community.
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
+*basic understanding of python
+*basic understanding of phpMyadmin
+*basic understanding of html/css
 
-What things you need to install the software and how to install them
-Python
-Django
-XAMPP
-```
-Give examples
-```
 
 ### Installing
 * Install the newest verion of python or 2.7
