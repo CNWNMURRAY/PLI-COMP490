@@ -53,6 +53,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 * https://scotch.io/tutorials/build-your-first-python-and-django-application
 * https://python-forum.io/Thread-Basic-Part-1-Python-3-6-and-pip-installation-under-Windows
 * https://www.digitalocean.com/community/tutorials/how-to-create-a-django-app-and-connect-it-to-a-database
+* https://www.packtpub.com/mapt/book/web_development/9781784391911/10/ch10lvl1sec63/creating-models-for-diverse-content
 * https://tutorial.djangogirls.org/en/django_views/
 * http://www.effectivedjango.com/tutorial/views.html
 * https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website
