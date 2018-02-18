@@ -33,15 +33,9 @@ Give examples
 *then run python manage.py makemigrations
 * then migrate with python manage.py migrate
 * create user with python manage.py createsuperuser --username=Name --email=email
-    *example: python manage.py createsuperuser --username=cneal2 --cnnwalke@gmail.com
 
-### Issues and fixes
-*pip install
---have to use py -m pip install django
-*Starting Server
--python manage.py runserver
--http://127.0.0.1:8000 (leads to original homepage but there is an error) 
--http://127.0.0.1:8000/PLCmodule/ (this leads to this homepage)
+## Common Issues and fixes
+
 
 
 ## Deployment
@@ -66,6 +60,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 * https://tutorial.djangogirls.org/en/django_views/
 * http://www.effectivedjango.com/tutorial/views.html
 * https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website
+*https://chrisbartos.com/articles/what-do-you-do-when-makemigrations-is-telling-you-about-your-lack-of-default-value/
 
 ## Versioning
 
