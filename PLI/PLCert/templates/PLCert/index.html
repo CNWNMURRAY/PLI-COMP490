@@ -1,0 +1,36 @@
+{% extends 'PLCert/layout.html' %}
+
+
+{% block content %}
+<div class = "title"></div>
+        <h3> Welcome </h3>
+         
+         <p class="introduction">
+             The PLC Module is for individuals teaching Preventative Law and for individuals
+         who would like to learn  Preventative Law for themselves.
+         This PLC Module was created by Chlece Neal the Executive Director and Senior Staff
+         Attorney at Chicago Advocate Legal, NFP. 
+         If you are taking this course to get certified to teach in Chicago Advocate
+         Legal NFP's Preventative Law Clinic please select PLC Presenter Module. 
+         If you are taking this course for your self. Please select PLE (Preventative 
+         Law Education)
+        </p>
+        
+     <script>
+     /* When the user clicks on the button, 
+     toggle between hiding and showing the dropdown content */
+     function myFunction() {
+         document.getElementById("myDropdown").classList.toggle("show");
+     }
+     
+     // Close the dropdown if the user clicks outside of it
+     window.onclick = function(e) {
+       if (!e.target.matches('.dropbtn')) {
+         var myDropdown = document.getElementById("myDropdown");
+           if (myDropdown.classList.contains('show')) {
+             myDropdown.classList.remove('show');
+           }
+       }
+     }
+     </script>
+{% endblock %}
