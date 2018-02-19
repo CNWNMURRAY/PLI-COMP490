@@ -71,3 +71,4 @@ class Image(ItemBase):
 
 class Video(ItemBase):
     url = models.URLField()
+    file = models.FileField(upload_to='images', default='None')

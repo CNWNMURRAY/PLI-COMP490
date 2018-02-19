@@ -23,3 +23,6 @@ def about(request):
 
 def courses(request):
     return render(request, 'PLCert/courses.html')
+
+def profile(request):
+    return render(request, 'PLCert/Profile.html')
