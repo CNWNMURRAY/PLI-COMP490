@@ -1,6 +1,79 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html lang="en-US">
+        <style>
+
+                header {
+                    padding: 1em;
+                    position: fixed;
+                    top:0;
+                    left:0;
+                    color: white;
+                    background-color: black;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                footer {
+                    padding: 1em;
+                    position: fixed;
+                    bottom:0;
+                    left:0;
+                    color: white;
+                    background-color: black;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                h1 {
+                    clear: left;
+                    text-align: center;
+                }
+
+                button {
+                    background-color:0038a8;
+                }
+
+                .dropdown{
+                    float: right;
+                    max-width: 10em;
+                    
+                }
+
+                .dropdown-menu  {
+                    border: none;
+                }
+                
+                .navbar-nav  {
+                    float: left;
+                    position: absolute;
+                    margin-top: 100px;
+ 
+                }
+
+                .course_container {
+                    float: left;
+                    
+                }
+                
+                .navbar-nav li {
+                    list-style-type: none;
+                    padding: 0;
+                }
+                   
+                .navbar-nav li a {
+                    text-decoration: none;
+                }
+                
+                p {
+                    margin-left: 180px;
+                    margin-top: 50%;
+                    border-left: 1px solid gray;
+                    padding-left: 1em;
+                  
+                }
+                </style>
+        
 <head>
   <meta charset="utf-8">
   <!--To ensure proper rendering and touch zooming-->
@@ -35,24 +108,23 @@
 
 <body>
 <div class="container-fluid">
-    <header class="name">
+    <header class="main">
         <h3> Preventative Law Initiative Certification E-Learning Module</h3>
     </header>
-    <div class="container-fluid-align-right">
-        <div class="dropdown">
+        <div class="dropdown"></div>
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Account</button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="/PLCert/LogoutReg">Logout</a>
-                    <a class="dropdown-item" href="/admin">Admin Login</a>
+                    <a class="dropdown-item" href="/admin">Admin</a>
                     <a class="dropdown-item" href="/PLCert/Help">Help</a>
                 </div>
-        </ul>
-    </div> 
+        </div> 
     
     <div class="navbar-nav">
+          <li><a href="/PLCert/index">Home</a></li>
           <li><a href="/PLCert/about">About</a></li>
           <li><a href="/PLCert/courses">Courses</a></li>
-          <li><a href="/PLCert/Events">PLC Events</a></li>
+          <li><a href="/PLCert/Events">Events</a></li>
     </div>
     <!-- anything in the block content will show up only on the index page-->
         {% block content %}
@@ -60,8 +132,8 @@
         <br>
     
     
-    </div>
-    <footer>Chicago Advocate Legal, NFP 2018</footer>
+</div>
+    <footer>Chicago Advocate Legal, NFP 2018 </footer>
 
 </body>
 </html>

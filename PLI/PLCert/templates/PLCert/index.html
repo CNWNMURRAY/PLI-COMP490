@@ -1,27 +1,28 @@
 {% extends 'PLCert/layout.html' %}
 {% load staticfiles %}
 {% block content %}
-<div class = "course_containter">
-  <h3 class="center-align">Courses</h3>
+
+<div class = "container">
+    <h1> Welcome </h1>
+    <p class="introduction">
+        The PLC Module is for individuals teaching Preventative Law and for individuals
+    who would like to learn  Preventative Law for themselves.
+    This PLC Module was created by Chlece Neal the Executive Director and Senior Staff
+    Attorney at Chicago Advocate Legal, NFP. 
+    If you are taking this course to get certified to teach in Chicago Advocate
+    Legal NFP's Preventative Law Clinic please select PLC Presenter Module. 
+    If you are taking this course for your self. Please select PLE (Preventative 
+    Law Education)
+    </p>
 </div>
-  <nav class="navbar bg-light">
-      <ul class="navbar-nav">
-          {% for courses in courses %}
-          <li class="nav-item"><a class="nav-link" href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
-          {% endfor %}
-       </ul>
-      </div>
-         <h1> Welcome </h1>
-         <p class="introduction">
-             The PLC Module is for individuals teaching Preventative Law and for individuals
-         who would like to learn  Preventative Law for themselves.
-         This PLC Module was created by Chlece Neal the Executive Director and Senior Staff
-         Attorney at Chicago Advocate Legal, NFP. 
-         If you are taking this course to get certified to teach in Chicago Advocate
-         Legal NFP's Preventative Law Clinic please select PLC Presenter Module. 
-         If you are taking this course for your self. Please select PLE (Preventative 
-         Law Education)
-        </p>
+<div class ="course_container">
+    <ul class="courses">
+    {% for courses in courses %}
+    <li  style="color:0038a8;" class="nav-item"><a class="nav-link" href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+
         
 
 {% endblock %}
