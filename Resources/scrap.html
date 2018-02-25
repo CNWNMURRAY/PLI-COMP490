@@ -1,0 +1,72 @@
+        <style>
+
+                    
+                footer {
+                    padding: 1em;
+                    position: fixed;
+                    bottom:0;
+                    left:0;
+                    color: white;
+                    background-color: black;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                h1 {
+                    clear: left;
+                    text-align: center;
+                }
+
+                button {
+                    background-color:0038a8;
+                }
+
+                .dropdown{
+                    float: right;
+                    max-width: 10em;
+                    
+                }
+
+                .dropdown-menu  {
+                    border: none;
+                }
+                
+                .navbar-nav  {
+                    float: left;
+                    position: absolute;
+                    margin-top: 100px;
+ 
+                }
+
+                .course_container {
+                    float: left;
+                    
+                }
+                
+                .navbar-nav li {
+                    list-style-type: none;
+                    padding: 0;
+                }
+                   
+                .navbar-nav li a {
+                    text-decoration: none;
+                }
+                
+                p {
+                    margin-left: 180px;
+                    margin-top: 50%;
+                    border-left: 1px solid gray;
+                    padding-left: 1em;
+                  
+                }
+                </style>
+
+
+<div class ="course_container">
+    <ul class="courses">
+    {% for courses in courses %}
+    <li  style="color:0038a8;" class="nav-item"><a class="nav-link" href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+        
