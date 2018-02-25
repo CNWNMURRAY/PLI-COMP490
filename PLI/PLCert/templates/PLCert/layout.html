@@ -39,21 +39,20 @@
         <h3> Preventative Law Initiative Certification E-Learning Module</h3>
     </header>
     <div class="container-fluid-align-right">
-        <ul class="nav-item dropdown", id="login">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Logout/Help</a>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Account</button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item"  href="LogoutReg">Logout</a>
+                    <a class="dropdown-item" href="/PLCert/LogoutReg">Logout</a>
                     <a class="dropdown-item" href="/admin">Admin Login</a>
-                    <a class="dropdown-item"  href="Help">Help</a>
+                    <a class="dropdown-item" href="/PLCert/Help">Help</a>
                 </div>
         </ul>
     </div> 
     
     <div class="navbar-nav">
-          <li><a href="about">About</a></li>
-          <li><a href="courses">Courses</a></li>
-          <li><a href="PLCerts">Preventative Legal Education Courses</a></li>
-          <li><a href="Events">PLC Events</a></li>
+          <li><a href="/PLCert/about">About</a></li>
+          <li><a href="/PLCert/courses">Courses</a></li>
+          <li><a href="/PLCert/Events">PLC Events</a></li>
     </div>
     <!-- anything in the block content will show up only on the index page-->
         {% block content %}

@@ -67,8 +67,8 @@ class File(ItemBase):
     file = models.FileField(upload_to='files')
 
 class Image(ItemBase):
-       file = models.FileField(upload_to='images')
+    file = models.FileField(upload_to='images')
 
 class Video(ItemBase):
     url = models.URLField()
-    file = models.FileField(upload_to='images', default='None')
+    file = models.FileField(upload_to='video', default='None')
