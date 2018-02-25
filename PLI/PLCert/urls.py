@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^$', views.index, name ='index'), 
     url(r'^about/$', views.about, name ='about'), 
     url(r'^courses/$', views.courses, name ='courses'),
-    url(r'^profile/$', views.profile, name ='profile')
+    url(r'^profile/$', views.profile, name ='profile'),
+    url(r'^events/$', views.events, name ='events'),
 
 ];

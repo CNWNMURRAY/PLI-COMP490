@@ -1,0 +1,21 @@
+{% extends 'PLCert/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="container">
+
+        <form action="/action_page.php">
+            Pick a date for the clinic:<br>
+            <input type="date" name="bday"><br><br>
+            E-mail:
+            <input type="email" name="email">
+            Telephone:
+            <input type="tel" name="usrtel">
+            Add your website:
+            <input type="url" name="homepage">
+            <input type="submit"> 
+        </form>     
+</div>
+        
+{% endblock %}
