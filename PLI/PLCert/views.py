@@ -39,4 +39,11 @@ def profile(request):
     return render(request, 'PLCert/Profile.html')
 
 def courselist(request):
-    return render(request, 'PLCert/courselist.html')
+    courses =  Course.objects.all()
+    #variable set equal to Course from models to get all courses. 
+    #next pass course object into template using context
+    context = {
+        'title': 'Courses',
+        'courses':courses
+    }
+    return render(request, 'PLCert/courselist.html', context)

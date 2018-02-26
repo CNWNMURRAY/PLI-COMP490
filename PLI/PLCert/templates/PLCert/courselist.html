@@ -3,11 +3,14 @@
 
 {% block content %}
 
+<h1 style="font-family:calibri;"><strong>Choose a Legal Information course to get started</strong></h1><br>
+
 <div class ="courses_container">
-        <ul class="course">
+        <ul style="list-style-type:none" class="course">
         {% for courses in courses %}
-        <li class="tabs"><a href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
+        <li class="tabs"><a class="button1 button1"href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
         {% endfor %}
         </ul>
 </div>
 {% endblock %}
+
