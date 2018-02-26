@@ -3,24 +3,62 @@
 {% block content %}
 
 
+<h1 style="font-family:calibri;"><strong> About The Preventative Law Initiative</strong></h1><br>
 
+<div class="about_container">
 
-    <h1> Welcome </h1>
-<div class ="home_container">
-    <p class="introduction">
-        The PLC Module is for individuals teaching Preventative Law and for individuals
-    who would like to learn  Preventative Law for themselves.
-    This PLC Module was created by Chlece Neal the Executive Director and Senior Staff
-    Attorney at Chicago Advocate Legal, NFP. 
-    If you are taking this course to get certified to teach in Chicago Advocate
-    Legal NFP's Preventative Law Clinic please select PLC Presenter Module. 
-    If you are taking this course for your self. Please select PLE (Preventative 
-    Law Education)
-    </p>
+        <button style="color:#0038a8;font-family:calibri;" onclick="myFunction('Demo1')" class="w3-btn w3-block w3-padding-16 w3-round-large  w3-large w3-amber w3-left-align">The Preventative Law Initiative</button><br>
+        <div id="Demo1" class="w3-container w3-hide">
+        <p style="font-family:calibri;">The Preventative Law Initiative is a project focusing on reducing the finacial and emtional 
+        cost of civil ligitgation on self represented litigants by prodividng legal information education. 
+        Chicago Advocate Legal, NFP (CAL),provides legal education workshops to the community on various housing and family law topics.</p> 
+        </div>
+
+        <button style="color:#0038a8;font-family:calibri;" onclick="myFunction2('Demo2')" class="w3-btn w3-block w3-padding-16 w3-round-large w3-large w3-cyan w3-left-align">Preventative Law E-Learning Module and Research Study</button><br>
+        <div id="Demo2" class="w3-container w3-hide">
+        <p style="font-family:calibri;">The Preventative E-Learning Module is designed to improve non-lawyers understanding of the civil legal process.</p>
+        </div>
+
+        <button style="color:#0038a8;font-family:calibri;" onclick="myFunction3('Demo3')" class="w3-btn w3-block w3-padding-16 w3-round-large w3-large w3-light-blue w3-left-align"<a href=http://www.chicagoadvocatelegal.com/>Chicago Advocate Legal, NFP</a></button><br>
+        <div id="Demo3" class="w3-container w3-hide">
+        <p style="font-family:calibri;">Chicago Advocate Legal, NFP is a non-profit law firm dedicated to providing affordable and accessible civil legal services to low and middle income individuals in the Cook County area.</p>
+        </div>
+        
+        </div>
+        <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        </script>
+
+        <script>
+                function myFunction2(id) {
+                    var x = document.getElementById(id);
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+        </script>
+
+        <script>
+                function myFunction3(id) {
+                    var x = document.getElementById(id);
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+        </script>
+       
 </div>
-
-
-
         
 
 {% endblock %}

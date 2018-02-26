@@ -3,21 +3,32 @@
 
 {% block content %}
 
-<h1>Register to host a clinc</h1><br>
+<h1>Register to Host A Clinic</h1><br>
 
 <div class="container">
-<p> Host site requirements: must be able to provide free space, must have a minimum of 10 participants. </p><br>
-        <form action="/action_page.php">
+<p> Please fill out the form below if you would like to host a clinic. Remember to be a host site your organization must: <br> 
+    1. be able to provide free space,<br>  
+    2. must have a minimum of 10 participants;<br> 
+    3. advertise the event, a minimum of one month is recommended for advertising. </p>
+    <form action="/action_page.php">
+            Contact person:<br>
+            <input type="text" name="contact_name"><br><br>
             Pick a date for the clinic:<br>
-            <input type="date" name="bday"><br><br>
+            <input type="date" name="clinic_date"><br><br>
             E-mail:
-            <input type="email" name="email">
+            <input type="email" name="contact_email">
             Telephone:
-            <input type="tel" name="usrtel">
+            <input type="tel" name="contact_tel">
             Add your website:
             <input type="url" name="homepage">
             <input type="submit"> 
-        </form>     
+    </form>  
+    
+    <p>Contact Us:
+    <a href="mailto:cneal@chicagoadvocatelegal.com?Subject=Hello%20again" target="_top">Chicago Advocate Legal, NFP</a>
+    312-561-5510
+</p>
+            
 </div>
         
 {% endblock %}

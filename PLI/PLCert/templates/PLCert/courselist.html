@@ -1,0 +1,13 @@
+{% extends 'PLCert/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class ="courses_container">
+        <ul class="course">
+        {% for courses in courses %}
+        <li class="tabs"><a href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
+        {% endfor %}
+        </ul>
+</div>
+{% endblock %}

@@ -37,3 +37,6 @@ def events(request):
 
 def profile(request):
     return render(request, 'PLCert/Profile.html')
+
+def courselist(request):
+    return render(request, 'PLCert/courselist.html')

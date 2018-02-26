@@ -2,17 +2,11 @@
 {% load staticfiles %}
 
 {% block content %}
-<h1 class="center-align">Legal Information Courses</h1>
 
-<div class ="accordion_container">
-        <ul class="accordion">
-        {% for courses in courses %}
-        <li class="tabs"><a href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
-        {% endfor %}
-        </ul>
-</div>
+<h1 class="center-align">Legal Information  E Learning Module</h1><br>
 
-<div class = "courses_container">
+
+<div class = "courses2_container">
         <p class="courses">
             The PLC Module is for individuals teaching Preventative Law and for individuals
         who would like to learn  Preventative Law for themselves.
@@ -23,6 +17,9 @@
         If you are taking this course for your self. Please select PLE (Preventative 
         Law Education)
         </p>
+
 </div>
+<a class="button1 button1"  href="/PLCert/emodule">Preventative Law Facilitator E-Learning Module</a>    
+<a class="button1 button2" href="/PLCert/courselist">Legal Information E-Learning Module</a>
 
 {% endblock %}

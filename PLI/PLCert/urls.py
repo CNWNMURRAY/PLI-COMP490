@@ -11,5 +11,6 @@ urlpatterns = [
     url(r'^courses/$', views.courses, name ='courses'),
     url(r'^profile/$', views.profile, name ='profile'),
     url(r'^events/$', views.events, name ='events'),
+    url(r'^courselist/$', views.courselist, name ='courselist'),
 
 ];
