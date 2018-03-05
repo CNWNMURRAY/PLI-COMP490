@@ -35,8 +35,17 @@ def courses(request):
 def events(request):
     return render(request, 'PLCert/events.html')
 
+def logout(request):
+    return render(request, 'PLCert/logout.html')
+
+def login(request):
+    return render(request, 'PLCert/login.html')
+
+def register(request):
+    return render(request, 'PLCert/register.html')
+
 def profile(request):
-    return render(request, 'PLCert/Profile.html')
+    return render(request, 'PLCert/profile.html')
 
 def courselist(request):
     courses =  Course.objects.all()

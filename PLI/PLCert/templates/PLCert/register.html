@@ -1,0 +1,41 @@
+{% extends 'PLCert/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<h1>Register to take courses</h1><br>
+
+<div class="container">
+<p> Please fill out the form below if you would like to Register to take courses. Remember to take classes you must: <br> 
+    1. be 18 years of age or older,<br>  
+    2. accept terms and conditions;<br> </p>
+    <form action="/action_page.php">
+            First name:<br>
+            <input type="text" name="Fname"><br><br>
+            Last name:<br>
+            <input type="text" name="Lname"><br><br>
+            Username:<br>
+            <input type="text" name="Uname"><br><br>
+            Birthdate:<br>
+            <input type="date" name="bdate"><br><br>
+            Password:<br>
+            <input type="password" password="password"><br><br>
+            E-mail:
+            <input type="email" name="contact_email"><br><br>
+            Gender:
+            <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nonbinary">Nonbinary</option>
+                    <option value="other">Other</option>
+            </select>
+    </form><br><br>
+    
+<p>Contact Us @:
+    <a href="mailto:cneal@chicagoadvocatelegal.com?Subject=Hello%20again" target="_top">Chicago Advocate Legal, NFP</a>
+    312-561-5510
+</p>
+            
+</div>
+        
+{% endblock %}
