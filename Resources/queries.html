@@ -1,0 +1,1 @@
+ALTER TABLE `plcert_response` ADD CONSTRAINT `question_response` FOREIGN KEY (`question_text`) REFERENCES `plcert_question`(`question_text`) ON DELETE CASCADE ON UPDATE CASCADE;

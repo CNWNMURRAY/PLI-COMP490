@@ -81,7 +81,10 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD':'',
         'HOST': 'localhost',
-        'PORT': ''
+        'PORT': '',
+        'OPTIONS': {
+            'init_command': 'SET innodb_strict_mode=1',
+        },
     }
 }
 
@@ -104,7 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+SILENCED_SYSTEM_CHECKS = [
+    'django_mysql.W002',
+]
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 

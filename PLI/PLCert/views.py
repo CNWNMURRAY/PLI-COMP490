@@ -16,8 +16,6 @@ def index(request):
 
     return render(request, 'PLCert/index.html', context)
 
-
-
 def about(request):
     return render(request, 'PLCert/about.html')
 
@@ -46,6 +44,12 @@ def register(request):
 
 def profile(request):
     return render(request, 'PLCert/profile.html')
+
+def poll(request, question_id):
+    return render(request, 'PLCert/poll.html')
+
+def results(request):
+    return render(request, 'PLCert/results.html')
 
 def courselist(request):
     courses =  Course.objects.all()

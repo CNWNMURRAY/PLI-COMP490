@@ -6,21 +6,25 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 
 # Create your models here.
 
-
-
-'''class Subject(models.Model):
-    title = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200, unique=True)
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    question_type = models.CharField(max_length=200, default='Unknown')
+    pub_date = models.DateTimeField('date published')
     
-    class Meta:
-        ordering = ('title',)
-
     def __str__(self):
-        return self.title'''
+        return self.question_text
 
+
+class Response(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    response_text = models.CharField(max_length=200)
+    number_of_responses = models.IntegerField(default=0)
+    
+    def __str__(self):
+        return self.response_text
 
 class Course(models.Model):
-    #author = models.ForeignKey(User, on_delete=models.CASCADE, default='None')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, default='Unknown')
     #subject = models.ForeignKey(Subject,  on_delete=models.CASCADE, default='None' )
     title = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True, default='None')
@@ -41,6 +45,23 @@ class Module(models.Model):
     def __str__(self):
         return self.title
 
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    question_type = models.CharField(max_length=200, default='Unknown')
+    pub_date = models.DateTimeField('date published')
+    
+    def __str__(self):
+        return self.question_text
+
+
+class Response(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    response_text = models.CharField(max_length=200)
+    number_of_responses = models.IntegerField(default=0)
+    
+    def __str__(self):
+        return self.response_text
+
 class Content(models.Model):
     module = models.ForeignKey(Module,on_delete=models.CASCADE)
     content_type = models.ForeignKey(ContentType, limit_choices_to={'model__in':('text','video','image','file')}, on_delete=models.CASCADE) 
@@ -49,7 +70,7 @@ class Content(models.Model):
 
 
 class ItemBase(models.Model):
-    title = models.CharField(max_length=250)
+    title = models.CharField(max_length=200)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
