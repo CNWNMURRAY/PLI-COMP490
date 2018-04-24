@@ -6,23 +6,6 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 
 # Create your models here.
 
-class Question(models.Model):
-    question_text = models.CharField(max_length=200)
-    question_type = models.CharField(max_length=200, default='Unknown')
-    pub_date = models.DateTimeField('date published')
-    
-    def __str__(self):
-        return self.question_text
-
-
-class Response(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    response_text = models.CharField(max_length=200)
-    number_of_responses = models.IntegerField(default=0)
-    
-    def __str__(self):
-        return self.response_text
-
 class Course(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, default='Unknown')
     #subject = models.ForeignKey(Subject,  on_delete=models.CASCADE, default='None' )
