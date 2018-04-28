@@ -48,6 +48,10 @@ def profile(request):
 def poll(request, question_id):
     return render(request, 'PLCert/poll.html')
 
+def PLV(request):
+    return render(request, 'PLCert/PLV.html')
+
+
 def results(request):
     return render(request, 'PLCert/results.html')
 
