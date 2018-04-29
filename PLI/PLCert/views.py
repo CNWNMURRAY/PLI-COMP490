@@ -33,6 +33,9 @@ def courses(request):
 def events(request):
     return render(request, 'PLCert/events.html')
 
+def emodule(request):
+    return render(request, 'PLCert/emodule.html')
+
 def logout(request):
     return render(request, 'PLCert/logout.html')
 

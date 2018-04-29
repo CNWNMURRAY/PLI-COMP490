@@ -6,6 +6,8 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 
 # Create your models here.
 
+
+
 class Course(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, default='Unknown')
     #subject = models.ForeignKey(Subject,  on_delete=models.CASCADE, default='None' )
