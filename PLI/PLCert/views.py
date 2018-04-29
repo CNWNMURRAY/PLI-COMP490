@@ -54,6 +54,9 @@ def poll(request, question_id):
 def PLV(request):
     return render(request, 'PLCert/PLV.html')
 
+def research(request):
+    return render(request, 'PLCert/research.html')
+
 def volunteer(request):
     return render(request, 'PLCert/volunteer.html')
 
