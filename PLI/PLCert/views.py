@@ -42,8 +42,6 @@ def logout(request):
 def login(request):
     return render(request, 'PLCert/login.html')
 
-def register(request):
-    return render(request, 'PLCert/register.html')
 
 def profile(request):
     return render(request, 'PLCert/profile.html')

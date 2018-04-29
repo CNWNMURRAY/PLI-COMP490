@@ -40,10 +40,36 @@
     </div>
 
 
+<button onclick="document.getElementById('id02').style.display='block'"class="button1 button2">Public Legal Informaion Module</button>
 
-<a class="button1 button2" href="/PLCert/courselist">Public Legal Informaion Module</a>
 
 
+    <div id="id02" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+    <h1 style="font-family:calibri;"><strong> Courses</strong></h1>
+    <p>Remember to take classes you must:be 18 years of age or older or have permission from a parent or guardian. <br>
+    <form   action="/action_page.php">
+            Birthdate:<br><input type="date" name="bdate"><br><br>
+            E-mail:<input type="email" name="contact_email"><br><br>
+            Zipcode:<input type=number name= "zipcode"><br><br>
+            Gender:
+            <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nonbinary">Nonbinary</option>
+                    <option value="nonbinary">Transgender</option>
+                    <option value="other">Other</option>
+            </select><br><br>
+            <input type="submit" class="w3-btn  w3-ripple">
+    </form>
+    <a href="/PLCert/courselist">continue to Preventative Law courses</a>
+</div>
+</div>
+</div>
+</div>
+      
 
 <!-- <a class="button1 button1" href="/PLCert/emodule">Facilitator Learning Module</a>-->
 

@@ -11,6 +11,9 @@ from .models import Text
 from .models import File
 from .models import Image
 from .models import Video
+from .models import Organization
+from .models import Volunteer
+#from .models import General_Registration
 
 admin.site.register(Question)
 admin.site.register(Response)
@@ -22,3 +25,6 @@ admin.site.register(Text)
 admin.site.register(File)
 admin.site.register(Image)
 admin.site.register(Video)
+admin.site.register(Organization)
+admin.site.register(Volunteer)
+#admin.site.register(General_Registration)

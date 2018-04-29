@@ -6,7 +6,41 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 
 # Create your models here.
 
+class Organization(models.Model):
+    organization_name =models.CharField(max_length=200)
+    address = models.CharField(max_length=200)
+    zipcode = models.PositiveIntegerField()
+    phone_number = models.PositiveIntegerField()
+    username =models.CharField(max_length=200)
+    password =models.CharField(max_length=200)
+    email = models.EmailField(max_length=200)
+    contact_person= models.CharField(max_length=200)
 
+    def __str__(self):
+        return organization_name and contact_person
+
+class Volunteer(models.Model):
+    F_name = models.CharField(max_length=200)
+    L_name = models.CharField(max_length=200)
+    birthdate =models.DateField()
+    zipcode = models.PositiveIntegerField()
+    phone_number = models.PositiveIntegerField()
+    email = models.EmailField(max_length=200)
+    username =models.CharField(max_length=200)
+    password =models.CharField(max_length=200) 
+
+    def __str__(self):
+        return self.F_name and self.L_name
+
+class General_Registration(models.Model):
+    birthdate =models.DateField
+    zipcode = models.PositiveIntegerField()
+    email = models.EmailField(max_length=200)
+    gender = models.CharField(max_length=200, default='Unknown')
+
+
+    def __str__(self):
+        return self.email
 
 class Course(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, default='Unknown')

@@ -12,7 +12,6 @@ urlpatterns = [
     url(r'^profile/$', views.profile, name ='profile'),
     url(r'^events/$', views.events, name ='events'),
     url(r'^courselist/$', views.courselist, name ='courselist'),
-    url(r'^register/$', views.register, name ='register'),
     url(r'^login/$', views.login, name ='login'),
     url(r'^logout/$', views.logout, name ='logout'),
     url(r'^poll/$', views.poll, name ='poll'),
