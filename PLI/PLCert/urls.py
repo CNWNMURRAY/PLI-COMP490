@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^poll/$', views.poll, name ='poll'),
     url(r'^PLV/$', views.PLV, name ='PLV'),
     url(r'^emodule/$', views.emodule, name ='emodule'),
+    url(r'^volunteer/$', views.volunteer, name ='volunteer'),
     url(r'^results/$', views.results, name ='results')
 
 
