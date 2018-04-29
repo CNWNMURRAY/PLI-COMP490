@@ -57,6 +57,9 @@ def PLV(request):
 def research(request):
     return render(request, 'PLCert/research.html')
 
+def privacypolicy(request):
+    return render(request, 'PLCert/privacypolicy.html')
+
 def volunteer(request):
     return render(request, 'PLCert/volunteer.html')
 

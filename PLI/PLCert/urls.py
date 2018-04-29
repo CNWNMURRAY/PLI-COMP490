@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^login/$', views.login, name ='login'),
     url(r'^logout/$', views.logout, name ='logout'),
     url(r'^poll/$', views.poll, name ='poll'),
+    url(r'^privacypolicy/$', views.privacypolicy, name ='privacypolicy'),
     url(r'^PLV/$', views.PLV, name ='PLV'),
     url(r'^emodule/$', views.emodule, name ='emodule'),
     url(r'^research/$', views.research, name ='research'),
