@@ -1,20 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Question
+from .models import Response
 from .models import Course
 from .models import Module
+from .models import Content
+from .models import ItemBase
+from .models import Text
+from .models import File
+from .models import Image
+from .models import Video
+from .models import Organization
+from .models import Volunteer
 
 # Create your views here.
 def index(request):
-
-    courses =  Course.objects.all()
-    #variable set equal to Course from models to get all courses. 
-    #next pass course object into template using context
-    context = {
-        'title': 'Courses',
-        'courses':courses
-    }
-
-    return render(request, 'PLCert/index.html', context)
+    return render(request, 'PLCert/index.html')
 
 def about(request):
     return render(request, 'PLCert/about.html')

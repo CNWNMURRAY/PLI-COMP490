@@ -3,36 +3,16 @@
 
 {% block content %}
 
-<h1 style="font-family:calibri;"><strong>Choose a Legal Information course to get started</strong></h1><br>
+<h1 style="font-family:calibri;"><strong>Choose a Legal Information Topic and Get Started </strong></h1><br>
 
-<p style="font-family:calibri;">Terms and Conditions: By using the information in the Preventative Law site including all education modules 
-I understand that this is legal information not legal advice and that none of the information I enter on this site is confidential. 
-I also understand that using this website does not create an attorney client relationship or attorney client preveliege.</p>
-       <!-- <form class = "w3-margin-top" onsubmit="return checkForm(this);">
-        <input type="checkbox"required class = "w3-left" name="terms">I accept the above Terms and Conditions<br>
-        <input onclick="document.getElementById('id01').style.display='block'" type="submit" name= Login>
-        </form>
+<div class ="courses_container">
+<ul style="list-style-type:none" class="course">
+  {% for courses in courses %}
+<li class="tabs"><a class="button1 button1"href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
+  {% endfor %}
+</ul>
+</div>
 
-
-<div id="id01" class="w3-modal w3-margin-top">
-        <div class="w3-modal-content w3-card-4">
-         <span onclick="document.getElementById('id01').style.display='none'" 
-            class="close w3-display-topright">&times;</span>
-          <div class="w3-container">-->
-            
-            
-                <div class ="courses_container">
-               <ul style="list-style-type:none" class="course">
-                 {% for courses in courses %}
-                 <li class="tabs"><a class="button1 button1"href="/PLCert/courses/{{courses.id}}">{{courses.title}}</a></li>
-                 {% endfor %}
-                </ul>
-                </div>
-                <!--<button id = simple_link  href="/PLCert/login">Cancel</button>
-          </div>
-        </div>
-      </div>-->
-   
 
 
 {% endblock %}
