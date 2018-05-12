@@ -75,3 +75,9 @@ def courselist(request):
         'courses':courses
     }
     return render(request, 'PLCert/courselist.html', context)
+
+def prose(request):
+    return render(request, 'PLCert/prose.html')
+
+def courthouse(request):
+    return render(request, 'PLCert/courthouse.html')

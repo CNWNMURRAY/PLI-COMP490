@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^$', views.index, name ='index'), 
     url(r'^about/$', views.about, name ='about'), 
     url(r'^courses/$', views.courses, name ='courses'),
+    url(r'^prose/$', views.prose, name ='prose'),
     url(r'^profile/$', views.profile, name ='profile'),
     url(r'^events/$', views.events, name ='events'),
     url(r'^courselist/$', views.courselist, name ='courselist'),
@@ -20,7 +21,10 @@ urlpatterns = [
     url(r'^emodule/$', views.emodule, name ='emodule'),
     url(r'^research/$', views.research, name ='research'),
     url(r'^volunteer/$', views.volunteer, name ='volunteer'),
-    url(r'^results/$', views.results, name ='results')
+    url(r'^results/$', views.results, name ='results'),
+    #courses
+    url(r'^courses/5/$', views.courthouse, name ='courthouse')
+  
 
 
 
