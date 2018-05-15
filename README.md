@@ -16,9 +16,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 * Install the newest verion of python or 2.7
 * Insatll XAMPP
-* Install virtual enviorment with: pip install virtualenwrapper-win
+* Install virtual enviorment with: pip install virtualenvwrapper-win
 * cd into where the project will be created
-* make a virtual enviorment with: mkirtualenv and name it ex: mkirtualenv test
+* make a virtual enviorment with: mkvirtualenv and name it ex: mkvirtualenv test
 * workon test
 * then install django globally with pip install django
 * create django application with: django-admin startproject test
