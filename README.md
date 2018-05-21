@@ -26,6 +26,7 @@ These instructions will get you a copy of the project up and running on your loc
 * set up database in settings file
 * first install database in this case mysql with: pip install mysqlclient
 *create models 
+* create a database called pli if you don't have one in your phpmyadmin
 *then run python manage.py makemigrations
 * then migrate with python manage.py migrate
 * create user with python manage.py createsuperuser --username=Name --email=email
