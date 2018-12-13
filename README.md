@@ -66,9 +66,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Chlece Neal** - *Initial work* - 
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Chlece Neal** 
 
 ## License
 
@@ -76,9 +74,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* 
-* 
-* 
+* Chawn Neal 
+* Participants in the Preventative Law Clinics 
 
 
 
