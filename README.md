@@ -74,7 +74,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Chawn Neal 
+* Chawn Neal
+* Vaibhav R. Thakkar
 * Participants in the Preventative Law Clinics 
 
 
